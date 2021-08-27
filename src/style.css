@@ -1,0 +1,111 @@
+body {
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+  background-image: url("img/sky3.png");
+  background-size: cover;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.details {
+  margin-top: 350px;
+  padding: 10px;
+  border: 2px solid rgb(117, 80, 80);
+  background-color: rgb(238, 232, 217);
+  color: rgb(49, 48, 48);
+  border-radius: 12px;
+  line-height: 2;
+  font-size: 20px;
+}
+#description {
+  font-size: 26px;
+}
+
+.card {
+  border: 2px solid rgb(117, 80, 80);
+  background-color: rgb(238, 232, 217);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.welcome {
+  display: block;
+  text-align: center;
+  margin: 50px 10px;
+  padding: 20px 20px;
+  border: 2px solid rgb(117, 80, 80);
+  border-radius: 35px;
+  background-color: rgb(238, 232, 217);
+  font-size: 18px;
+}
+#current-location {
+  margin: 15px 20px 0px;
+  padding: 5px 10px;
+  color: rgb(238, 232, 217);
+  background-color: rgb(117, 80, 80);
+}
+h1 {
+  font-family: "Style Script", cursive;
+  color: rgb(117, 80, 80);
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.result {
+  text-align: center;
+  font-size: 42px;
+  color: rgb(24, 23, 23);
+  position: relative;
+  top: -10px;
+}
+#description {
+  font-weight: bold;
+  font-size: 30px;
+}
+#temp-celsius {
+  font-size: 34px;
+}
+
+a {
+  color: rgb(51, 51, 94);
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.nextDays {
+  position: relative;
+  top: 100px;
+  left: 60px;
+  font-size: 22px;
+  color: rgb(49, 48, 48);
+  font-weight: bold;
+  line-height: 0.4;
+}
+h5 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.first-day {
+  background-color: rgb(238, 232, 217);
+  margin-bottom: 20px;
+}
+.second-day {
+  background-color: rgb(238, 232, 217);
+  margin-bottom: 20px;
+}
+.third-day {
+  background-color: rgb(238, 232, 217);
+  margin-bottom: 20px;
+}
+.fourth-day {
+  background-color: rgb(238, 232, 217);
+  margin-bottom: 20px;
+}
+.fifth-day {
+  background-color: rgb(238, 232, 217);
+  margin-bottom: 20px;
+}
