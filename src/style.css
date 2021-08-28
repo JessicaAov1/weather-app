@@ -56,8 +56,9 @@ h1 {
 #link-Git {
   color: white;
   font-size: 18px;
+  font-weight: lighter;
   position: relative;
-  top: 50px;
+  top: 10px;
 }
 #link-Git :hover {
   color: rgba(2, 255, 255, 0.863);
@@ -67,7 +68,7 @@ a:link {
   font-size: 32px;
 }
 a:link:hover {
-  color: rgba(1, 102, 102, 0.863);
+  color: rgba(1, 158, 163, 0.863);
 }
 
 .result {
