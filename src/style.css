@@ -53,6 +53,22 @@ h1 {
   font-size: 56px;
   font-weight: bold;
 }
+#link-Git {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: 50px;
+}
+#link-Git :hover {
+  color: rgba(2, 255, 255, 0.863);
+}
+
+a:link {
+  font-size: 32px;
+}
+a:link:hover {
+  color: rgba(1, 102, 102, 0.863);
+}
 
 .result {
   text-align: center;
