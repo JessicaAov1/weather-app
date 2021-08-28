@@ -55,13 +55,17 @@ h1 {
 }
 #link-Git {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: lighter;
   position: relative;
   top: 10px;
 }
+em {
+  color: rgb(0, 255, 191);
+  font-weight: bolder;
+}
 #link-Git :hover {
-  color: rgba(2, 255, 255, 0.863);
+  color: rgb(95, 9, 56);
 }
 
 a:link {
