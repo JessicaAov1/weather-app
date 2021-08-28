@@ -63,6 +63,7 @@ h1 {
 em {
   color: rgb(0, 255, 191);
   font-weight: bolder;
+  text-decoration: underline;
 }
 #link-Git :hover {
   color: rgb(95, 9, 56);
