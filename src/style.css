@@ -1,27 +1,68 @@
 body {
   font-family: "Merienda", cursive;
   font-weight: bold;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/131/original/sky3.png?1630100586");
-  background-size: cover;
   margin: 0px;
+}
+.weather-app {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/131/original/sky3.png?1630100586 ");
+  background-size: cover;
+  max-width: 1000px;
+  max-height: 585px;
+  display: block;
+  margin: 30px 0px 0px 50px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 20px;
 }
 
 ul {
   list-style: none;
 }
 
+.welcome {
+  display: block;
+  margin: 0px;
+  padding: 10px 0px;
+  border: 2px solid rgb(117, 80, 80);
+  border-radius: 35px;
+  background-color: rgb(238, 232, 217);
+  font-size: 14px;
+}
+#city-form {
+  padding: 0px 30px;
+  margin: 0px 10px;
+}
+
+#current-location {
+  color: rgb(238, 232, 217);
+  background-color: rgb(117, 80, 80);
+  font-size: 14px;
+  margin: 0px 30px 0px -40px;
+  padding: 2px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+#current-location:hover {
+  color: rgb(28, 170, 170);
+}
+
+h1 {
+  font-family: "Style Script", cursive;
+  color: rgb(117, 80, 80);
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .details {
-  margin-top: 350px;
+  margin-top: 250px;
   padding: 10px;
   border: 2px solid rgb(117, 80, 80);
   background-color: rgb(238, 232, 217);
   color: rgb(49, 48, 48);
   border-radius: 12px;
   line-height: 2;
-  font-size: 20px;
-}
-#description {
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .card {
@@ -31,64 +72,19 @@ ul {
   text-align: center;
 }
 
-.welcome {
-  display: block;
-  text-align: center;
-  margin: 50px 10px;
-  padding: 20px 20px;
-  border: 2px solid rgb(117, 80, 80);
-  border-radius: 35px;
-  background-color: rgb(238, 232, 217);
-  font-size: 18px;
-}
-#current-location {
-  margin: 15px 20px 0px;
-  padding: 5px 10px;
-  color: rgb(238, 232, 217);
-  background-color: rgb(117, 80, 80);
-}
-h1 {
-  font-family: "Style Script", cursive;
-  color: rgb(117, 80, 80);
-  font-size: 56px;
-  font-weight: bold;
-}
-#link-Git {
-  color: white;
-  font-size: 14px;
-  font-weight: lighter;
-  position: relative;
-  top: 10px;
-}
-em {
-  color: rgb(0, 255, 191);
-  font-weight: bolder;
-  text-decoration: underline;
-}
-#link-Git :hover {
-  color: rgb(95, 9, 56);
-}
-
-a:link {
-  font-size: 32px;
-}
-a:link:hover {
-  color: rgba(1, 158, 163, 0.863);
-}
-
 .result {
   text-align: center;
-  font-size: 42px;
+  font-size: 36px;
   color: rgb(24, 23, 23);
   position: relative;
-  top: -10px;
+  bottom: 300px;
 }
 #description {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
 }
 #temp-celsius {
-  font-size: 34px;
+  font-size: 30px;
 }
 
 a {
@@ -96,11 +92,17 @@ a {
   font-size: 36px;
   text-decoration: none;
 }
+a:link {
+  font-size: 32px;
+}
+a:link:hover {
+  color: rgba(1, 158, 163, 0.863);
+}
 
 .nextDays {
   position: relative;
-  top: 100px;
-  left: 60px;
+  left: 780px;
+  bottom: 680px;
   font-size: 22px;
   color: rgb(49, 48, 48);
   font-weight: bold;
@@ -130,4 +132,20 @@ h5 {
 .fifth-day {
   background-color: rgb(238, 232, 217);
   margin-bottom: 20px;
+}
+small {
+  text-align: center;
+}
+#link-Git {
+  color: rgb(95, 9, 56);
+  font-size: 14px;
+  font-weight: lighter;
+}
+em {
+  color: rgb(95, 9, 56);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#link-Git :hover {
+  color: rgb(28, 170, 170);
 }

@@ -29,95 +29,106 @@
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-3" style="width: 16rem">
-          <ul class="details">
-            <li id="description">Sunny</li>
-            <li id="humidity">Humidity: 57%</li>
-            <li id="wind">Wind: 4km/h</li>
-            <li id="sunset">Sunset: 8pm UTC+1</li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <div class="welcome">
-            <h1>Welcome!</h1>
-
-            <form id="city-form">
-              <label for="city">Enter your city :</label>
-              <input
-                type="text"
-                autofocus="on"
-                autocomplete="off"
-                id="search-city-input"
-              />
-              <input type="submit" id="search-form" value="Search" />
-            </form>
-
-            <button id="current-location">Current location</button>
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-3" style="width: 16rem">
+            <ul class="details">
+              <li id="description">Sunny</li>
+              <li id="humidity">Humidity: 57%</li>
+              <li id="wind">Wind: 4km/h</li>
+              <li id="sunset">Sunset: 8pm UTC+1</li>
+            </ul>
           </div>
-          <div class="result">
-            <span class="currentTemp" id="current-temperature">☀ 25</span>
-            <span class="currentTemp" id="temp-celsius">°C </span>
-            <span class="currentTemp" id="temp-fahrenheit"
-              ><a href="#" id="fahr">/°F</a>
-            </span>
+          <div class="col-6">
+            <div class="welcome">
+              <h1>Welcome!</h1>
+              <div class="row">
+                <div class="col-9">
+               
+                    <form id="city-form">
+                      
+                      <input
+                        type="text"
+                        placeholder="Enter your city :"
+                        autofocus="on"
+                        autocomplete="off"
+                        id="search-city-input"
+                      />
+                      <input type="submit" id="search-form" value="Search" />
+                    </form>
+                  </div>
 
-            <p class="currentCity" id="current-city">Sintra</p>
-            <p class="currentDay" id="current-day">Thursday, July 28</p>
-            <p class="currentTime" id="current-time">16:10</p>
-            <div class="link">
-              <a
-                href="https://github.com/JessicaAov1/weather-app"
-                id="link-Git"
-                target="_blank"
-              >
-                <em> Open-source code</em> by Jessica Aronov and hosted by
-                Netlify
-              </a>
+                  <div class="col-3">
+                    <button id="current-location">My location</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="result">
+              <span class="currentTemp" id="current-temperature"> 25</span>
+              <span class="currentTemp" id="temp-celsius">°C </span>
+              <span class="currentTemp" id="temp-fahrenheit"
+                ><a href="#" id="fahr">/°F</a>
+              </span>
+
+              <p class="currentCity" id="current-city">Sintra</p>
+              <p class="currentDay" id="current-day">Thursday, July 28</p>
+              <p class="currentTime" id="current-time">16:10</p>
             </div>
           </div>
-        </div>
-        <div class="col-3">
-          <div class="nextDays">
-            <div class="card first-day" style="width: 14rem">
-              <div class="card-body">
-                <h5 class="card-title day1">Friday</h5>
-                <p class="card-text temp1">🌤 18°C</p>
+          <div class="col-3">
+            <div class="nextDays">
+              <div class="card first-day" style="width: 9rem">
+                <div class="card-body">
+                  <h5 class="card-title day1">Friday</h5>
+                  <p class="card-text temp1">🌤 18°C</p>
+                </div>
               </div>
-            </div>
 
-            <div class="card second-day" style="width: 14rem">
-              <div class="card-body">
-                <h5 class="card-title day2">Saturday</h5>
-                <p class="card-text temp2">🌤 18°C</p>
+              <div class="card second-day" style="width: 9rem">
+                <div class="card-body">
+                  <h5 class="card-title day2">Saturday</h5>
+                  <p class="card-text temp2">🌤 18°C</p>
+                </div>
               </div>
-            </div>
 
-            <div class="card third-day" style="width: 14rem">
-              <div class="card-body">
-                <h5 class="card-title day3">Sunday</h5>
-                <p class="card-text temp3">🌤 18°C</p>
+              <div class="card third-day" style="width: 9rem">
+                <div class="card-body">
+                  <h5 class="card-title day3">Sunday</h5>
+                  <p class="card-text temp3">🌤 18°C</p>
+                </div>
               </div>
-            </div>
 
-            <div class="card fourth-day" style="width: 14rem">
-              <div class="card-body">
-                <h5 class="card-title day4">Monday</h5>
-                <p class="card-text temp4">🌤 18°C</p>
+              <div class="card fourth-day" style="width: 9rem">
+                <div class="card-body">
+                  <h5 class="card-title day4">Monday</h5>
+                  <p class="card-text temp4">🌤 18°C</p>
+                </div>
               </div>
-            </div>
 
-            <div class="card fifth-day" style="width: 14rem">
-              <div class="card-body">
-                <h5 class="card-title day5">Tuesday</h5>
-                <p class="card-text temp5">🌤 18°C</p>
+              <div class="card fifth-day" style="width: 9rem">
+                <div class="card-body">
+                  <h5 class="card-title day5">Tuesday</h5>
+                  <p class="card-text temp5">🌤 18°C</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <small>
+        <div class="link">
+          <a
+            href="https://github.com/JessicaAov1/weather-app"
+            id="link-Git"
+            target="_blank"
+          >
+            <em> Open-source code</em> by Jessica Aronov and hosted by Netlify
+          </a>
+        </div>
+      </small>
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
