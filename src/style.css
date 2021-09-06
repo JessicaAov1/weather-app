@@ -77,7 +77,7 @@ h1 {
   font-size: 36px;
   color: rgb(24, 23, 23);
   position: relative;
-  bottom: 300px;
+  bottom: 270px;
 }
 #description {
   font-weight: bold;
@@ -103,7 +103,7 @@ a:link:hover {
   position: relative;
   left: 780px;
   bottom: 680px;
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(49, 48, 48);
   font-weight: bold;
   line-height: 0.4;
@@ -138,7 +138,7 @@ small {
 }
 #link-Git {
   color: rgb(95, 9, 56);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
 }
 em {
