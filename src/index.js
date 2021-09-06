@@ -40,8 +40,16 @@ resultDay.innerHTML = `${day}, ${month} ${date}`;
 let resultTime = document.querySelector("#current-time");
 resultTime.innerHTML = `${hour}:${minutes}`;
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  return `Sunset: ${hours}h${minutes}`;
+}
+
 function showWeather(response) {
   console.log(response);
+
   let resultCity = document.querySelector("#current-city");
   let currentCity = response.data.name;
   resultCity.innerHTML = currentCity;
@@ -52,9 +60,9 @@ function showWeather(response) {
 
   let currentHumidity = response.data.main.humidity;
   let humidity = document.querySelector("#humidity");
-  humidity.innerHTML = `Humidity : ${currentHumidity}%`;
+  humidity.innerHTML = `Humidity: ${currentHumidity}%`;
 
-  let currentDescription = response.data.weather[0].main;
+  let currentDescription = response.data.weather[0].description;
   let description = document.querySelector("#description");
   description.innerHTML = `${currentDescription}`;
 
@@ -64,7 +72,7 @@ function showWeather(response) {
 
   let sunsetTime = response.data.sys.sunset;
   let sunset = document.querySelector("#sunset");
-  sunset.innerHTML = `Sunset: ${sunsetTime} `;
+  sunset.innerHTML = formatDate(sunsetTime * 1000);
 }
 
 function showFahrenheit(event) {
