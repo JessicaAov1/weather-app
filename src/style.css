@@ -83,6 +83,7 @@ h1 {
   bottom: 270px;
 }
 #icon {
+  display: block;
   margin: 0px 70px;
 }
 #description {
