@@ -73,6 +73,12 @@ function showWeather(response) {
   let sunsetTime = response.data.sys.sunset;
   let sunset = document.querySelector("#sunset");
   sunset.innerHTML = formatDate(sunsetTime * 1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showFahrenheit(event) {
