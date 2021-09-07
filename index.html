@@ -32,10 +32,11 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-3" style="width: 16rem">
-            <ul class="details">
-              
+            
+             <ul class="details"> 
             <div class="clearfix weather-icon"><img src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear"class="float-left" id="icon"/> </div>
-                 <li id="description"> Sunny </li>
+                
+            <li id="description"> Sunny </li>
               <li id="humidity">Humidity: 57%</li>
               <li id="wind">Wind: 4km/h</li>
               <li id="sunset">Sunset: 8pm UTC+1</li>
@@ -70,10 +71,8 @@
             <div class="result">
              
               <span class="currentTemp" id="current-temperature"> 25</span>
-              <span class="currentTemp" id="temp-celsius">°C </span>
-              <span class="currentTemp" id="temp-fahrenheit"
-                ><a href="#" id="fahr">/°F</a>
-              </span>
+              <span class="currentTemp" id="temp-celsius"><a href="#" id="celsius-link">°C</a> </span>
+              <span class="currentTemp" id="temp-fahrenheit" ><a href="#" id="fahrenheit-link">| °F</a> </span>
 
               <p class="currentCity" id="current-city">Sintra</p>
               <p class="currentDay" id="current-day">Thursday, July 28</p>
@@ -82,35 +81,35 @@
           </div>
           <div class="col-3">
             <div class="nextDays">
-              <div class="card first-day" style="width: 9rem">
+              <div class="card first-day" style="width: 8rem">
                 <div class="card-body">
                   <h5 class="card-title day1">Friday</h5>
                   <p class="card-text temp1">🌤 18°C</p>
                 </div>
               </div>
 
-              <div class="card second-day" style="width: 9rem">
+              <div class="card second-day" style="width: 8rem">
                 <div class="card-body">
                   <h5 class="card-title day2">Saturday</h5>
                   <p class="card-text temp2">🌤 18°C</p>
                 </div>
               </div>
 
-              <div class="card third-day" style="width: 9rem">
+              <div class="card third-day" style="width: 8rem">
                 <div class="card-body">
                   <h5 class="card-title day3">Sunday</h5>
                   <p class="card-text temp3">🌤 18°C</p>
                 </div>
               </div>
 
-              <div class="card fourth-day" style="width: 9rem">
+              <div class="card fourth-day" style="width: 8rem">
                 <div class="card-body">
                   <h5 class="card-title day4">Monday</h5>
                   <p class="card-text temp4">🌤 18°C</p>
                 </div>
               </div>
 
-              <div class="card fifth-day" style="width: 9rem">
+              <div class="card fifth-day" style="width: 8rem">
                 <div class="card-body">
                   <h5 class="card-title day5">Tuesday</h5>
                   <p class="card-text temp5">🌤 18°C</p>
@@ -121,7 +120,7 @@
         </div>
       </div>
       <small>
-        <div class="link">
+        <div class="codeLink">
           <a
             href="https://github.com/JessicaAov1/weather-app"
             id="link-Git"

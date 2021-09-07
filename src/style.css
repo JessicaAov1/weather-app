@@ -36,6 +36,10 @@ li:first-letter {
   margin: 0px 10px;
 }
 
+#current-temperature {
+  font-size: 42px;
+}
+
 #current-location {
   color: rgb(238, 232, 217);
   background-color: rgb(117, 80, 80);
@@ -68,11 +72,13 @@ h1 {
   font-size: 18px;
 }
 
-.card {
-  border: 2px solid rgb(117, 80, 80);
-  background-color: rgb(238, 232, 217);
-  border-radius: 12px;
-  text-align: center;
+#icon {
+  display: block;
+  margin: 0px 70px;
+}
+#description {
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .result {
@@ -82,30 +88,30 @@ h1 {
   position: relative;
   bottom: 270px;
 }
-#icon {
-  display: block;
-  margin: 0px 70px;
-}
-#description {
-  font-weight: bolder;
-  font-size: 18px;
-}
-#temp-celsius {
-  font-size: 30px;
-}
 
 a {
   color: rgb(51, 51, 94);
-  font-size: 36px;
-  text-decoration: none;
 }
 a:link {
-  font-size: 32px;
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+  text-decoration: none;
 }
-a:link:hover {
-  color: rgba(1, 158, 163, 0.863);
+#celsius-link {
+  color: black;
+  cursor: default;
+}
+#celsius-link:hover {
+  color: #0a58ca;
 }
 
+.card {
+  border: 2px solid rgb(117, 80, 80);
+  background-color: rgb(238, 232, 217);
+  border-radius: 12px;
+  text-align: center;
+}
 .nextDays {
   position: relative;
   left: 780px;
@@ -143,16 +149,20 @@ h5 {
 small {
   text-align: center;
 }
+em {
+  font-weight: bolder;
+  text-decoration: underline;
+}
 #link-Git {
   color: rgb(95, 9, 56);
   font-size: 12px;
   font-weight: lighter;
 }
-em {
-  color: rgb(95, 9, 56);
-  font-weight: bolder;
-  text-decoration: underline;
-}
 #link-Git :hover {
   color: rgb(28, 170, 170);
+}
+
+.codeLink {
+  position: relative;
+  top: 15px;
 }
