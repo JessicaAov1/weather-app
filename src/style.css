@@ -83,7 +83,7 @@ h1 {
 
 .result {
   text-align: center;
-  font-size: 36px;
+  font-size: 34px;
   color: rgb(24, 23, 23);
   position: relative;
   bottom: 270px;
@@ -112,18 +112,17 @@ a:link {
   border-radius: 12px;
   text-align: center;
 }
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
 .nextDays {
   position: relative;
-  left: 780px;
-  bottom: 680px;
+  left: 760px;
+  bottom: 650px;
   font-size: 20px;
   color: rgb(49, 48, 48);
-  font-weight: bold;
   line-height: 0.4;
-}
-h5 {
-  font-size: 22px;
-  font-weight: bold;
 }
 
 .first-day {
