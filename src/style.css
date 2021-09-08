@@ -58,7 +58,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 .weather-details {
-  margin-top: 180px;
+  margin-top: 160px;
   padding: 0px;
   border: 2px solid rgb(117, 80, 80);
   background-color: rgb(238, 232, 217);
@@ -66,9 +66,9 @@ li:first-letter {
   border-radius: 12px;
 }
 .details {
-  line-height: 2;
-  font-size: 18px;
-  padding-inline-start: 10px;
+  line-height: 1.8;
+  font-size: 16px;
+  padding-inline-start: 15px;
 }
 
 #icon {
@@ -82,14 +82,15 @@ li:first-letter {
 
 .result {
   text-align: center;
-  font-size: 34px;
+  font-size: 32px;
   color: rgb(24, 23, 23);
   position: relative;
   bottom: 270px;
 }
 
 #current-temperature {
-  font-size: 38px;
+  font-size: 36px;
+  line-height: 3;
 }
 a {
   color: rgb(51, 51, 94);
@@ -113,14 +114,13 @@ a:link {
   text-align: center;
 }
 .card-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .nextDays {
   position: relative;
-  left: 760px;
-  bottom: 650px;
-
+  left: 780px;
+  bottom: 660px;
   color: rgb(49, 48, 48);
   line-height: 0.4;
 }
@@ -155,7 +155,6 @@ a:link {
 #icon4,
 #icon5,
 #icon6 {
-  margin: auto 10px 10px;
   padding: 0px;
 }
 
