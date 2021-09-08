@@ -113,14 +113,14 @@ a:link {
   text-align: center;
 }
 .card-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .nextDays {
   position: relative;
   left: 760px;
   bottom: 650px;
-  font-size: 20px;
+
   color: rgb(49, 48, 48);
   line-height: 0.4;
 }
@@ -129,6 +129,7 @@ a:link {
   background-color: rgb(238, 232, 217);
   margin-bottom: 20px;
 }
+
 .second-day {
   background-color: rgb(238, 232, 217);
   margin-bottom: 20px;
@@ -145,6 +146,19 @@ a:link {
   background-color: rgb(238, 232, 217);
   margin-bottom: 20px;
 }
+.card-text {
+  font-size: 14px;
+}
+
+#icon2,
+#icon3,
+#icon4,
+#icon5,
+#icon6 {
+  margin: auto 10px 10px;
+  padding: 0px;
+}
+
 small {
   text-align: center;
 }
