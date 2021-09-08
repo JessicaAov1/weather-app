@@ -95,18 +95,11 @@ function showFahrenheit(event) {
   currentTemperature.innerHTML = Math.round(fahreneitTemperature);
 }
 
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", showFahrenheit);
-
 function showCelsius(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 }
-
-let celsiusTemperature = null;
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsius);
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -117,9 +110,6 @@ function handleSubmit(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
-
-let cityForm = document.querySelector("#city-form");
-cityForm.addEventListener("submit", handleSubmit);
 
 function showPosition(position) {
   console.log(position);
@@ -137,3 +127,14 @@ function currentData(position) {
 
 let currentLocation = document.querySelector("button");
 currentLocation.addEventListener("click", currentData);
+
+let celsiusTemperature = null;
+
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsius);
+
+let cityForm = document.querySelector("#city-form");
+cityForm.addEventListener("submit", handleSubmit);
