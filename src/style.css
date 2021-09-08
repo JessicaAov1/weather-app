@@ -6,6 +6,7 @@ body {
 .weather-app {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/131/original/sky3.png?1630100586 ");
   background-size: cover;
+  min-width: 600px;
   max-width: 1000px;
   max-height: 585px;
   display: block;
