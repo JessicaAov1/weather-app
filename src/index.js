@@ -52,6 +52,38 @@ function formatDate(timestamp) {
   }
   return `Sunset: ${hours}h${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Sun", "Mon", "Tue", "Fri", "Sat"];
+
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-3">
+  <div class="card first-day" style="width: 7rem">
+  <div class="card-body">
+  <h5 class="card-title day1">${day}</h5>
+                <span class="card-text temp-max2">
+                <div class="clearfix weather-icon">
+                    <img
+                    src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                    alt="Clear"
+                    class="float-left"
+                    id="icon2"
+                    width="25%"
+                    />
+                    18°
+                    <span class="card-text temp-min2"> 12°</span>
+                    </span>
+                    </div>
+                    </div>
+                    </div>`;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+  console.log(displayForecast);
+}
 
 function showWeather(response) {
   console.log(response);
@@ -138,3 +170,5 @@ celsiusLink.addEventListener("click", showCelsius);
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", handleSubmit);
+
+displayForecast();

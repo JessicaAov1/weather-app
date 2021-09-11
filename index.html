@@ -27,7 +27,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
- <body>
+  <body>
     <div class="container">
       <div class="weather-app">
         <div class="row">
@@ -88,103 +88,7 @@
             <p class="currentTime" id="current-time">16:10</p>
           </div>
         </div>
-        <div class="col-3">
-          <div class="nextDays">
-            <div class="card first-day" style="width: 7rem">
-              <div class="card-body">
-                <h5 class="card-title day1">Fri</h5>
-                <span class="card-text temp-max2">
-                  <div class="clearfix weather-icon">
-                    <img
-                      src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                      alt="Clear"
-                      class="float-left"
-                      id="icon2"
-                      width="25%"
-                    />
-                    18°
-                    <span class="card-text temp-min2"> 12°</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="card second-day" style="width: 7rem">
-              <div class="card-body">
-                <h5 class="card-title day2">Sat</h5>
-                <span class="card-text temp-max3">
-                  <div class="clearfix weather-icon">
-                    <img
-                      src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                      alt="Clear"
-                      class="float-left"
-                      id="icon3"
-                      width="25%"
-                    />
-                    18°
-                    <span class="card-text temp-min3"> 12°</span>
-                  </div>
-                </span>
-              </div>
-            </div>
-
-            <div class="card third-day" style="width: 7rem">
-              <div class="card-body">
-                <h5 class="card-title day3">Sun</h5>
-                <span class="card-text temp-max4">
-                  <div class="clearfix weather-icon">
-                    <img
-                      src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                      alt="Clear"
-                      class="float-left"
-                      id="icon4"
-                      width="25%"
-                    />
-                    18°
-                    <span class="card-text temp-min4"> 12°</span>
-                  </div>
-                </span>
-              </div>
-            </div>
-
-            <div class="card fourth-day" style="width: 7rem">
-              <div class="card-body">
-                <h5 class="card-title day4">Mon</h5>
-                <span class="card-text temp-max5">
-                  <div class="clearfix weather-icon">
-                    <img
-                      src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                      alt="Clear"
-                      id="icon5"
-                      width="25%"
-                    />
-                    18°
-                    <span class="card-text temp-min5"> 12°</span>
-                  </div>
-                </span>
-              </div>
-            </div>
-
-            <div class="card fifth-day" style="width: 7rem">
-              <div class="card-body">
-                <h5 class="card-title day5">Tues</h5>
-                <span class="card-text temp-max6">
-                  <div class="clearfix weather-icon">
-                    <img
-                      src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                      alt="Clear"
-                      class="float-left"
-                      id="icon6"
-                      width="25%"
-                    />
-                    18°
-                    <span class="card-text temp-min6"> 12°</span>
-                  </div>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="nextDays" id="forecast"></div>
       </div>
     </div>
     <small>
