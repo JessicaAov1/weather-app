@@ -158,7 +158,11 @@ function showCelsius(event) {
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 }
-
+function search(city) {
+  let apiKey = "9ca6c562062d122440b16668ce916487";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&&units=metric`;
+  axios.get(apiUrl).then(showWeather);
+}
 function handleSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-city-input");
@@ -196,3 +200,5 @@ celsiusLink.addEventListener("click", showCelsius);
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", handleSubmit);
+
+search("lisbon");
