@@ -1,3 +1,4 @@
+//Time and date
 let now = new Date();
 let days = [
   "Sunday",
@@ -59,6 +60,7 @@ function formatDay(timestamp) {
 
   return days[day];
 }
+//Show Forecast
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -109,6 +111,7 @@ function getForecast(coordinates) {
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
+// Show  weather in current data and "details" section
 
 function showWeather(response) {
   console.log(response);
@@ -146,6 +149,7 @@ function showWeather(response) {
   getForecast(response.data.coord);
 }
 
+// convert Celsius to Fahrenheit
 function showFahrenheit(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
@@ -158,6 +162,7 @@ function showCelsius(event) {
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 }
+// search city
 function search(city) {
   let apiKey = "9ca6c562062d122440b16668ce916487";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&&units=metric`;
@@ -172,7 +177,7 @@ function handleSubmit(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
-
+// Get current location info
 function showPosition(position) {
   console.log(position);
   let latitude = position.coords.latitude;
