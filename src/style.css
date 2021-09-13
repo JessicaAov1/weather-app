@@ -5,7 +5,8 @@ body {
 }
 .weather-app {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/131/original/sky3.png?1630100586 ");
-  background-size: 1050px;
+  background-size: cover;
+  background-position: center;
   max-width: 800px;
   max-height: 585px;
   display: block;
@@ -91,19 +92,11 @@ li:first-letter {
 #current-temperature {
   font-size: 32px;
 }
-a {
-  color: rgb(51, 51, 94);
-}
-a:link {
-  font-size: 16px;
+
+#temp-celsius {
+  font-size: 14px;
   position: relative;
   top: -12px;
-  text-decoration: none;
-}
-#celsius-link {
-  color: black;
-  cursor: default;
-  text-decoration: none;
 }
 
 .card {
@@ -175,5 +168,5 @@ em {
 
 .codeLink {
   position: relative;
-  top: 15px;
+  top: 5px;
 }
